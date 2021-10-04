@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* Root Variables */
+/****************************************************************
+ * General Section
+ * **************************************************************/
 :root
 {
     --logo-red : #801316;
@@ -38,6 +41,27 @@ body
     width: 100%;
 }
 
+/* --- Section --- */
+.section {
+    position:relative;
+    padding-top:70px;
+    padding-bottom:70px;
+}
+
+.section-hr {
+    margin-top:80px;
+    margin-bottom:80px;
+    border-color: #EBEBEB;
+}
+
+.section-header {
+    margin-bottom:40px;
+}
+
+/****************************************************************
+ * Header
+ * **************************************************************/
+
 header
 {
     width: 100%;
@@ -51,6 +75,8 @@ ul
 li > a
 {
     text-transform: capitalize;
+    padding: 10px;
+
 }
 
 .img-fluid
@@ -76,6 +102,11 @@ li > a
     width: 100%;
     height: 70vh;
 }
+
+
+/****************************************************************
+ * CAROUSEL
+ * **************************************************************/
 
 .carousel
 {
@@ -156,3 +187,278 @@ li > a
     }
 
 }
+
+
+/*------------------------------------*\
+    About & Why Us (Feature)
+\*------------------------------------*/
+/* -- Feature -- */
+.feature {
+    position:relative;
+}
+
+.feature + .feature  {
+    margin-top:40px;
+}
+
+.feature .feature-icon {
+    position:absolute;
+    left:0;
+    top:0;
+    width:80px;
+    height:80px;
+    line-height:80px;
+    text-align:center;
+    border-radius: 50%;
+    font-size:30px;
+    border:1px solid white;
+    color:#FF6700;
+}
+
+.feature-content {
+    padding-left:100px;
+}
+
+/* -- About Img -- */
+.about-img {
+    margin-top:40px;
+}
+
+.about-img > img {
+    width:100%;
+}
+
+
+/**********************************/
+/********** Tab News CSS **********/
+/**********************************/
+.tab-news {
+    position: relative;
+}
+
+.tab-news .col-md-6 {
+    margin-bottom: 60px;
+}
+
+.tab-news .nav.nav-pills .nav-link {
+    color: #ffffff;
+    background: blue;
+    border-radius: 0;
+}
+
+.tab-news .nav.nav-pills .nav-link:hover,
+.tab-news .nav.nav-pills .nav-link.active {
+    color: #ffffff;
+    background: #87e6d4;
+}
+
+.tab-news .tab-content {
+    padding: 10px 5px 5px 5px;
+    background: rgba(0, 0, 0, .05);
+}
+
+.tab-news .tn-news {
+    align-items: center;
+    margin-bottom: 5px;
+    background: #ffffff;
+}
+
+.tab-news .tn-img {
+    width: 150px;
+}
+
+.tab-news .tn-img img {
+    width: 150px;
+}
+
+.tab-news .tn-title {
+    padding: 5px 10px;
+}
+
+.tab-news .tn-title a {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all .3s;
+}
+
+.tab-news .tn-title a:hover {
+    color: #FF6F61;
+}
+
+
+
+/*--------------------------------------------------------------
+# Values
+--------------------------------------------------------------*/
+.values .box {
+  padding: 30px;
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  text-align: center;
+  transition: 0.3s;
+  height: 100%;
+}
+.values .box img {
+  width: 90%;
+  height: auto;
+
+  margin: 20px 20px;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+.values .box h3 {
+  font-size: 24px;
+  color: #012970;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.values .box:hover {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+.values .box:hover img {
+  transform: scale(1);
+}
+
+.values.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+}
+.counts .count-box {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+.counts .count-box i {
+  font-size: 42px;
+  line-height: 0;
+  margin-right: 20px;
+  color: #4154f1;
+}
+.counts .count-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #0b198f;
+}
+.counts .count-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+}
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  background: linear-gradient(
+      90deg,
+      rgba(88, 70, 249, 0.5) 0%,
+      rgba(123, 39, 216, 0.5) 100%
+    ),
+    url("../img/counts-bg.png") center center no-repeat;
+  padding: 80px 0 60px 0;
+  margin-bottom: 50px;
+}
+.countsNew{
+    background: linear-gradient(
+      90deg,
+      rgba(545, 45, 145, 0.5) 0%,
+      rgba(220 , 237, 244, 0.8) 100%
+    ),
+url("../img/counts-bg.png") center center no-repeat;    
+  padding: 80px 0 60px 0;
+  margin-bottom: 50px;
+}
+
+.counts .count-box img{
+    background-image: center center;
+    position: flex;
+}
+
+.counts .counters span {
+  font-size: 48px;
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.counts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*--------------------------------------------------------------
+# Facilities
+--------------------------------------------------------------*/
+.facilities {
+  padding-top: 20px;
+}
+.facilities .icon-box {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+.facilities .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0 10px 60px;
+}
+.facilities .icon-box i {
+  font-size: 48px;
+  float: left;
+  color: #ffc451;
+}
+.facilities .icon-box p {
+  font-size: 15px;
+  color: #848484;
+  margin-left: 60px;
+}
+.facilities .image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 450px;
+}
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients{
+    margin-bottom: 20px;
+}
+.clients .clients-wrap {
+  border-top: 1px solid #ececec;
+  border-left: 1px solid #ececec;
+}
+.clients .client-logo {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  overflow: hidden;
+  background: #fff;
+  height: 100px;
+}
+.clients .client-logo img {
+  transition: all 0.3s ease-in-out;
+  height: 36px;
+  filter: grayscale(100%);
+}
+.clients .client-logo:hover img {
+  filter: none;
+  transform: scale(1.1);
+}
+
