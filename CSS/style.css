@@ -560,6 +560,7 @@ li > a
 .features .icon-box {
   display: flex;
   align-items: center;
+  height: 100%;
   padding: 20px;
   transition: ease-in-out 0.3s;
   box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
