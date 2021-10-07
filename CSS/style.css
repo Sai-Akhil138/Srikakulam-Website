@@ -218,8 +218,12 @@ li > a
 }
 
 .tab-news .tab-content {
-    padding: 10px 5px 5px 5px;
+    padding: 10px 0 0 0;
     background: rgba(0, 0, 0, .05);
+}
+
+.tab-news .tab-pane{
+  padding: 0;
 }
 
 .tab-news .tn-news {
